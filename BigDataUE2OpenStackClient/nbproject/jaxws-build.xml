@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-PiCalculator" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/PiCalculator"/>
+        <property name="wsdl-PiCalculator" location="xml-resources/web-service-references/PiCalculator/wsdl/ec2-54-229-46-221.eu-west-1.compute.amazonaws.com/PiCalculator.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/PiCalculator" destdir="${build.generated.dir}/jax-wsCache/PiCalculator" wsdl="${wsdl-PiCalculator}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" wsdlLocation="http://ec2-54-229-143-198.eu-west-1.compute.amazonaws.com/PiCalculator?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-PiCalculator}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/PiCalculator"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/PiCalculator">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-PiCalculator" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/PiCalculator"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/bigdataue2package"/>
+    </target>
+    <target name="wsimport-client-PiCalculator_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/PiCalculator_1"/>
+        <property name="wsdl-PiCalculator_1" location="xml-resources/web-service-references/PiCalculator_1/wsdl/ec2-54-229-46-221.eu-west-1.compute.amazonaws.com/PiCalculator.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/PiCalculator_1" destdir="${build.generated.dir}/jax-wsCache/PiCalculator_1" wsdl="${wsdl-PiCalculator_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" wsdlLocation="http://ec2-54-229-46-221.eu-west-1.compute.amazonaws.com/PiCalculator?wsdl" xnocompile="true" xendorsed="true" package="bigdataue2package2">
+            <depends file="${wsdl-PiCalculator_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/PiCalculator_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/PiCalculator_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-PiCalculator_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/PiCalculator_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/bigdataue2openstackclient"/>
+    </target>
+    <target name="wsimport-client-PiCalculator_2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/PiCalculator_2"/>
+        <property name="wsdl-PiCalculator_2" location="xml-resources/web-service-references/PiCalculator_2/wsdl/ec2-54-229-160-219.eu-west-1.compute.amazonaws.com/PiCalculator.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/PiCalculator_2" destdir="${build.generated.dir}/jax-wsCache/PiCalculator_2" wsdl="${wsdl-PiCalculator_2}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" wsdlLocation="http://ec2-54-229-160-219.eu-west-1.compute.amazonaws.com/PiCalculator?wsdl" xnocompile="true" xendorsed="true" package="bigdataue2package3">
+            <depends file="${wsdl-PiCalculator_2}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/PiCalculator_2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/PiCalculator_2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-PiCalculator_2" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/PiCalculator_2"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/bigdataue2"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-PiCalculator, wsimport-client-PiCalculator_1, wsimport-client-PiCalculator_2"/>
+</project>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/BigDataUE2/PiCalculator?wsdl" uri="wsdl/localhost_8080/BigDataUE2/PiCalculator.wsdl"/>
+    <system systemId="http://localhost:8080/BigDataUE2/PiCalculator?xsd=1" uri="wsdl/localhost_8080/BigDataUE2/PiCalculator.xsd_1.xsd"/>
+    <system systemId="http://193.170.32.211:8080/BigDataUE2/PiCalculator?wsdl" uri="wsdl/193.170.32.211_8080/BigDataUE2/PiCalculator.wsdl"/>
+    <system systemId="http://193.170.32.211:8080/BigDataUE2/PiCalculator?xsd=1" uri="wsdl/193.170.32.211_8080/BigDataUE2/PiCalculator.xsd_1.xsd"/>
+    <system systemId="http://ec2-54-229-46-221.eu-west-1.compute.amazonaws.com/PiCalculator?wsdl" uri="wsdl/ec2-54-229-46-221.eu-west-1.compute.amazonaws.com/PiCalculator.wsdl"/>
+    <system systemId="http://ec2-54-229-46-221.eu-west-1.compute.amazonaws.com:80/PiCalculator?xsd=1" uri="wsdl/ec2-54-229-46-221.eu-west-1.compute.amazonaws.com_80/PiCalculator.xsd_1.xsd"/>
+</catalog>

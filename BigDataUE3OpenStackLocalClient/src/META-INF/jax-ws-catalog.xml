@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://193.170.32.212:8080/BigDataUE3OpenStackWorkerController/WorkerController?wsdl" uri="wsdl/193.170.32.212_8080/BigDataUE3OpenStackWorkerController/WorkerController.wsdl"/>
+    <system systemId="http://193.170.32.212:8080/BigDataUE3OpenStackWorkerController/WorkerController?xsd=1" uri="wsdl/193.170.32.212_8080/BigDataUE3OpenStackWorkerController/WorkerController.xsd_1.xsd"/>
+</catalog>

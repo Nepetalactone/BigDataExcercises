@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://WorkerControllerPackage/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WorkerControllerPackage/">
+
+<xs:element name="startCalculation" type="tns:startCalculation" />
+
+<xs:element name="startCalculationResponse" type="tns:startCalculationResponse" />
+
+<xs:complexType name="startCalculation">
+<xs:sequence>
+<xs:element name="numberOfThrows" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="startCalculationResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
